@@ -63,7 +63,7 @@ for line in f:             # We use a for loop to iterate through the file one l
 
 f.close                    # Always close the file at the end.
 ~~~
-{: .python}
+{: .language_python}
 
 You can think of the file as being a list of strings. Each string in the list is one complete line from the file.
 
@@ -89,7 +89,7 @@ for line in f:
 
 f.close()
 ~~~
-{: .python}
+{: .language_python}
 
 Having a list of the roof types from all of the records is one thing, but it is more likely that we would want a count of each type. By scanning up and down the previous output, there appears to be 3 different type, but we will play safe and assume there may be more.
 
@@ -130,7 +130,7 @@ print("There are ", mabatisloping_roof, " mabatisloping roofs")
 print("There are ", mabatipitched_roof, " mabatipitchedg roofs")
 print("There are ", roof_type_other, " other roof types")
 ~~~
-{: .python}
+{: .language_python}
 
 What are we  doing here?
 
@@ -161,7 +161,7 @@ for line in fr:
 fr.close()
 fw.close()
 ~~~
-{: .python}
+{: .language_python}
 
 What are we  doing here?
 
@@ -174,7 +174,7 @@ In this example we didn't bother skipping the header line as it would fail the t
 ~~~
 fw.write(fr.readline())
 ~~~
-{: .python}
+{: .language_python}
 
 before the for loop
 
@@ -208,7 +208,7 @@ before the for loop
 > > fw1.close()
 > > fw2.close()
 > > ~~~
-> > {: .python}
+> > {: .language_python}
 > >
 > {: .solution}
 {: .challenge}
@@ -276,7 +276,7 @@ if key in personDict :
 else :
     personDict[key] = "New value"
 ~~~
-{: .python}
+{: .language_python}
 
 > ## Exercise
 > 
@@ -315,7 +315,7 @@ else :
 > >     print(item, "=", dict_roof_types[item])
 > >     
 > > ~~~
-> > {: .python}
+> > {: .language_python}
 > > 
 > {: .solution}
 {: .challenge}
@@ -349,7 +349,7 @@ f.close()
 for item in dict_roof_types:
     print(item, "=", dict_roof_types[item])
 ~~~
-{: .python}
+{: .language_python}
 
 What are we  doing here?
 

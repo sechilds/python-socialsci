@@ -68,7 +68,7 @@ In Python variables are created when you first assign values to them.
 a = 2
 b = 3.142
 ~~~
-{: .python}
+{: .language-python}
 
 All variables have a data type associated with them.
 The datatype is an indication of the type of data contained in a variable.
@@ -80,7 +80,7 @@ type(b)
 s = "Hello World"
 type(s)
 ~~~
-{: .python}
+{: .language-python}
 
 There are many more data types available, a full list is available in the [Python documentation](https://docs.python.org/3/).
 We will be looking a few of them later on.
@@ -105,7 +105,7 @@ print(a / b)      # division
 print(b ** a)     # exponentiation
 print(2 * a % b)  # modulus - returns the remainder
 ~~~
-{: .python}
+{: .language-python}
 
 We need to use the print function because by default only the last output from a cell is displayed in the output cell.
 
@@ -169,7 +169,7 @@ You can get help on any Python function by using the help function. It takes a s
 ~~~
 help(print)
 ~~~
-{: .python}
+{: .language-python}
 
 ~~~
 Help on built-in function print in module builtins:
@@ -205,7 +205,7 @@ print(type(a))
 a = float(a)
 print(type(a))
 ~~~
-{: .python}
+{: .language-python}
 
 Although you can always change an `integer` to a `float`, if you change a `float` to an `integer` then you can lose part of the value of the variable and you won't get an error message.
 
@@ -223,7 +223,7 @@ a = int(a)
 print(type(a))
 print(a)
 ~~~
-{: .python}
+{: .language-python}
 
 In some circimstances explicitly converting a datatype makes no sense; you cannot change a string with alphabetic characters into a number.
 
@@ -234,7 +234,7 @@ print(type(b))
 b = int(b)
 print(type(b))
 ~~~
-{: .python}
+{: .language-python}
 
 ## Strings
 
@@ -256,7 +256,7 @@ name = "Peter"
 mystring = 'Hello this is ' + name + "'s code"
 print(mystring)
 ~~~
-{: .python}
+{: .language-python}
 
 ## String functions
 
@@ -272,7 +272,7 @@ print(len(mystring))
 
 dir(mystring)
 ~~~
-{: .python}
+{: .language-python}
 
 The methods that you can use are those that do NOT start with '__'.
 
@@ -298,7 +298,7 @@ print(myString.isalpha())
 
 print(myString.replace(" ","").isalpha())
 ~~~
-{: .python}
+{: .language-python}
 
 If you need to refer to a specific element (character ) in a string,
 you can do so by specifying the index of the character in '[]'
@@ -316,7 +316,7 @@ print(myString[0:])        # from index 0 to the end
 print(myString[:9])        # from the beginning to one before index 9
 print(myString[:9])
 ~~~
-{: .python}
+{: .language-python}
 
 ## Basic Python datatypes
 
@@ -339,7 +339,7 @@ a = 6
 b = 3
 print(a < b)
 ~~~
-{: .python}
+{: .language-python}
 
 
 > ## Exercise
@@ -368,7 +368,7 @@ print(a < b)
 > bool_val6 = -1
 > print(bool(bool_val6))
 > ~~~
-> {: .python}
+> {: .language-python}
 >
 > > ## Solution
 > >
@@ -405,7 +405,7 @@ list4 = [6, 5.4, "numbers", True ]
 print(list4)
 print(type(list4))
 ~~~
-{: .python}
+{: .language-python}
 
 ### The range function
 
@@ -415,7 +415,7 @@ In addition to explicitly creating lists as we have above it is very common to c
 list5 = list(range(5))
 print(list5)
 ~~~
-{: .python}
+{: .language-python}
 
 Unless told not to range() returns a sequence which starts at 0, counts up by 1 and ends 1 before the value of the provided parameter.
 
@@ -429,7 +429,7 @@ print(list6)
 list7 = list(range(2, 11, 2))
 print(list7)
 ~~~
-{: .python}
+{: .language-python}
 
 When you specify 3 parameters as we have for list(7); the first is start value, the second is one past the last value and the 3rd parameter is a step value by which to count. The step value can be negative
 
@@ -449,7 +449,7 @@ When you specify 3 parameters as we have for list(7); the first is start value, 
 > > list8 = list(range(10, 1, -2))
 > > print(list8)
 > > ~~~
-> > {: .python}
+> > {: .language-python}
 > {: .solution}
 {: .challenge}
 

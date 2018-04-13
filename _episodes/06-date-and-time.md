@@ -36,7 +36,7 @@ from datetime import datetime
 today = datetime.today()
 print('ISO     :', today)
 ~~~
-{: .python}
+{: .language_python}
 
 We can however use our own formatting, for example if we wanted words instead of number and the 4 digit year at the end we could use the following.
 
@@ -51,7 +51,7 @@ d = datetime.strptime(s, format)
 print('strptime:', d.strftime(format))
 print(type(d))
 ~~~
-{: .python}
+{: .language_python}
 
 `strftime` converts a datetime object to a string and `strptime` creates a datetime object from a string. 
 When you print them using the same format string, they look the same.
@@ -113,7 +113,7 @@ print('formatted end time', time_end)
 
 f.close()
 ~~~
-{: .python}
+{: .language_python}
 
 ### Components of dates and times
 
@@ -136,7 +136,7 @@ print(' end time minutes', time_end.minute)
 print(' end time seconds', time_end.second)
 print(type(time_end.second))
 ~~~
-{: .python}
+{: .language_python}
 
 ## Date arithmetic
 
@@ -153,7 +153,7 @@ date_diff = datetime_start - datetime_end
 print(type(date_diff))
 print(date_diff)
 ~~~
-{: .python}
+{: .language_python}
 
 
 > ## Exercise
@@ -186,7 +186,7 @@ for line in f:
     
 f.close()
 ~~~
-{: .python}
+{: .language_python}
 
 > ## Exercise
 > 
@@ -217,7 +217,7 @@ f.close()
 > >      
 > > f.close()
 > > ~~~
-> > {: .python}
+> > {: .language_python}
 > > 
 > {: .solution}
 {: .challenge}

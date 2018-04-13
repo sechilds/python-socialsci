@@ -75,7 +75,7 @@ print("a is", a, "b is",b)
 if a == b :
     print(a, "is equal to", b)
 ~~~
-{: .python}
+{: .language-python}
 
 In the examples above there are three things to notice;
 
@@ -120,7 +120,7 @@ if a > b :
 else :
     print(a, " is NOT greater than ", b)
 ~~~
-{: .python}
+{: .language-python}
 
 > ## Exercise
 >
@@ -145,7 +145,7 @@ elif a == b :
 else :
     print(a, " is less than ", b)
 ~~~
-{: .python}
+{: .language-python}
 
 The overall structure is similar to the `if ... else` statement. There are three additional things to notice;
 
@@ -171,7 +171,7 @@ while  i <= n :
     i = i + 1
 print("The sum of the numbers from 1 to", n, "is ", cur_sum)
 ~~~
-{: .python}
+{: .language-python}
 
 Points to note;
 
@@ -201,7 +201,7 @@ changes it to green).  If we define `sum = 0` now we can't use the function `sum
 >     
 > print("The sum of the numbers from 1 to", n, "is ", cur_sum)
 > ~~~
-> {: .python}
+> {: .language-python}
 >
 > ~~~
 > # while loop - summing the numbers 1 to 10
@@ -216,7 +216,7 @@ changes it to green).  If we define `sum = 0` now we can't use the function `sum
 >     
 > print("The sum of the numbers from 1 to", n, "is ", cur_sum)
 > ~~~
-> {: .python}
+> {: .language-python}
 >
 > ~~~
 > # while loop - summing the numbers 1 to 10
@@ -230,7 +230,7 @@ changes it to green).  If we define `sum = 0` now we can't use the function `sum
 >
 > print("The sum of the numbers from 1 to", n, "is ", cur_sum)
 > ~~~
-> {: .python}
+> {: .language-python}
 >
 > ~~~
 > # while loop - summing the numbers 1.1 to 9.9 i. steps of 1.1
@@ -245,7 +245,7 @@ changes it to green).  If we define `sum = 0` now we can't use the function `sum
 >     
 > print("The sum of the numbers from 1.1 to", n, "is ", sum)
 > ~~~
-> {: .python}
+> {: .language-python}
 >
 > > ## Solution
 > >
@@ -271,7 +271,7 @@ for variable_name in some_sequence :
     ...
     statementn
 ~~~
-{: .python}
+{: .language-python}
 
 The key part of this is the 'some_sequence'. The phrase used in the documentation is that it must be 'iterable'. That means; you can count through the sequence, starting at the beginning and stopping at the end.
 
@@ -315,7 +315,7 @@ longString = "The quick brown fox jumped over the lazy sleeping dog"
 for word in longString.split() :
     print(word)
 ~~~
-{: .python}
+{: .language-python}
 
 > ## Exercise
 >
@@ -326,7 +326,7 @@ for word in longString.split() :
 > ~~~
 > variablelist = "01/01/2010,34.5,Yellow,True"
 > ~~~
-> {: .python}
+> {: .language-python}
 >
 > Research the `split()` method and then rewrite example 8 so that it prints the 4 components of variablelist
 >
@@ -337,7 +337,7 @@ for word in longString.split() :
 > > for word in variablelist.split(",") :
 > >     print(word)
 > > ~~~
-> > {: .python}
+> > {: .language-python}
 > >
 > > The format of variablelist is very much like that of a record in a csv file. In later episodes we will see how we can extract these values and assign them to variables for further processing rather tha just printing them out.
 > >

@@ -41,7 +41,7 @@ personDict['Location'] = 'Manchester'
 
 print(personDict)
 ~~~
-{: .python}
+{: .language_python}
 
 So far the keys in the dictionary each relate to a single piece of information about the person. What if we wanted to to add a list of items? 
 
@@ -50,7 +50,7 @@ personDict['Children'] = ['John', 'Jane', 'Jack']
 personDict['Children_count'] = 3
 print(personDict)
 ~~~
-{: .python}
+{: .language_python}
 
 Not only can I have a key where the value is a list, the value could also be another dictionary object. Suppose I want to add some telephone numbers
 
@@ -62,7 +62,7 @@ print(personDict.values())
 personDict['phones']['business'] =  '0161234234546'
 print(personDict)
 ~~~
-{: .python}
+{: .language_python}
 
 > ## Exercise
 > 
@@ -127,7 +127,7 @@ with open('SAFI.json') as json_data:
     print(type(d[0]))
     print(json.dumps(d[0], indent=2))
 ~~~
-{: .python}
+{: .language_python}
 
 Points to note;
 
@@ -144,7 +144,7 @@ By default the order in which the keys of the dictionary are printed is not guar
 ~~~
 print(json.dumps(d[0], indent=2, sort_keys=True))
 ~~~
-{: .python}
+{: .language_python}
 
 ## Extracting specific fields from a JSON document
 
@@ -153,7 +153,7 @@ If we want to extract fields from a JSON document, the first step isto convert t
 ~~~
 d = json.load(json_data)
 ~~~
-{: .python}
+{: .language_python}
 
 line. 'd' a list object and each entry in the list is a Dictionary object.
 
@@ -168,7 +168,7 @@ We can print the contents of the first dictionary in the list with
 ~~~
 print(json.dumps(d[0], indent=2, sort_keys=True))
 ~~~
-{: .python}
+{: .language_python}
 
 > ## Exercise
 > 
@@ -191,7 +191,7 @@ print(json.dumps(d[0], indent=2, sort_keys=True))
 > > ~~~
 > > print(d[0]['D_plots'][0]['D_crops'][0]['D_curr_crop']) 
 > > ~~~
-> > {: .python}
+> > {: .language_python}
 > {: .solution}
 {: .challenge}
 
@@ -213,7 +213,7 @@ for farms in d:
         for curr_crops in crop:
             print(curr_crops['D_curr_crop']) 
 ~~~
-{: .python}
+{: .language_python}
 
 In this version we test if all of the keys exists. 
 This could be extended to check that the lists are not empty.
@@ -229,7 +229,7 @@ for farms in d:
                     if 'D_curr_crop' in curr_crops:
                         print(curr_crops['D_curr_crop'])
 ~~~
-{: .python}
+{: .language_python}
 
 We can now produce a list of all of the crops in all of the plots in all of the farms. 
 
@@ -249,7 +249,7 @@ for farms in d:
                         unique_crops.add(curr_crops['D_curr_crop'])
 print(unique_crops)
 ~~~
-{: .python}
+{: .language_python}
 
 Simply having a list of all of the crops is unlikely to be enough. What you are really interested in is which farm grows which crops in which plot. 
 
@@ -271,7 +271,7 @@ for farms in d:
                     if 'D_curr_crop' in curr_crops:
                         print("Farm no ", id, " grows ", curr_crops['D_curr_crop'], " in plot ", plot_no , " and it is crop number ", crop_no)
 ~~~
-{: .python}
+{: .language_python}
 
 The final stage of this data extraction process is to save the extracted data to a file for subsequent use. 
 
@@ -309,4 +309,4 @@ for farms in d:
                         
 fw.close()
 ~~~
-{: .python}
+{: .language_python}
